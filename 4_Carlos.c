@@ -4,22 +4,20 @@ int main() {
     int vetor[10];
 
     printf("Digite 10 números inteiros!\n\n");
-    for (int i = 0; i < 10; i++) {
-        printf("Digite o valor do %d número: ", i + 1);
-        scanf("%d", &vetor[i]);
+    for (int x = 0; x < 10; x++) {
+        printf("Digite o valor do %d número: ", x + 1);
+        scanf("%d", &vetor[x]);
     }
 
     printf("\nOrdem de entrada:\n");
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", vetor[i]);
+    for (int x = 0; x < 10; x++) {
+        printf("%d ", vetor[x]);
     }
 
     printf("\n\nOrdem inversa:\n");
-    for (int i = 9; i >= 0; i--) {
-        printf("%d ", vetor[i]);
+    for (int x = 9; x >= 0; x--) {
+        printf("%d ", vetor[x]);
     }
-
-    printf("\n");
-
+    
     return 0;
 }
